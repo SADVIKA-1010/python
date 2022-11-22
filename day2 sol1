@@ -1,0 +1,6 @@
+p=int(input("enter a principle number"))
+t=int(input("enter time period"))
+r=int(input("enter rate of interest"))
+s=(p*t*r)/100
+e=(p+s)/t*12
+print(e)
