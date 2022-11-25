@@ -1,0 +1,6 @@
+list=[23,45,12,24,46,68,34]
+sum=0
+for i in list:
+    if i%2==0:
+        sum=sum+i
+print("sum of all even numbers is",+sum)
