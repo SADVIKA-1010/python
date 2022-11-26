@@ -1,0 +1,11 @@
+v=35
+print(v>>1)
+print(v>>2)
+print(v>>3)
+print(v>>4)
+print(v>>5)
+print(v>>6)
+print(v>>7)
+print(v>>8)
+print(v>>9)
+print(v>>10)
