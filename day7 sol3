@@ -1,0 +1,6 @@
+bal=10000;
+credited_amount=int(input('Enter amount:'))
+d=credited_amount+bal;
+print('Transaction processing successfully....')
+print('credited amount:',credited_amount)
+print('Main balance:',d)
