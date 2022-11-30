@@ -1,0 +1,50 @@
+rice=200
+wheat=250
+sugar=40
+dal=80
+salt=15
+cp=int(input("enter your number"))
+name=input("enter your name")
+add=input("enter your address")
+i1=int(input("enter quantity of rice:"))
+i2=int(input("enter quantity of wheat:"))
+i3=int(input("enter quantity of sugar:"))
+i4=int(input("enter quantity of dal:"))
+i5=int(input("enter quantity of salt:"))
+cc=input("enter coupon code: DIWALI or CHRISTMAS")
+bill=(rice*i1)+(wheat*i2)+(sugar*i3)+(dal*i4)+(salt*i5)
+if cc=='DIWALI':
+    if bill>=5000:
+        dis=(10*bill)/100
+    elif bill>=3000:
+        dis=(6*bill)/100
+    elif bill>=1000:
+        dis=(4*bill)/100
+    else:
+        dis=0
+if cc=='CHRISTMAS':
+    if bill>=3000:
+        dis=(20*bill)/100
+    elif bill>=2000:
+        dis=(10*bill)/100
+    elif bill>=1000:
+        dis=(5*bill)/100
+    else:
+        dis=0
+if bill>3000:
+    tax=(15*bill)/100
+elif bill>2000:
+    tax=(10*bill)/100
+elif bill>1000:
+    tax=(7*bill)/100
+elif bill>500:
+    tax=(5*bill)/100
+else:
+    tax=100
+print("phn number:",cp)
+print("name:",name)
+print("address:",add)
+print("bill:",bill)
+print("tax:",tax)
+tt=bill+tax-dis
+print("total bill:",tt)
