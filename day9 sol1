@@ -1,0 +1,31 @@
+rice=200
+wheat=250
+sugar=40
+dal=80
+salt=15
+cp=int(input("enter your number"))
+name=input("enter your name")
+add=input("enter your address")
+i1=int(input("enter quantity of rice:"))
+i2=int(input("enter quantity of wheat:"))
+i3=int(input("enter quantity of sugar:"))
+i4=int(input("enter quantity of dal:"))
+i5=int(input("enter quantity of salt:"))
+bill=(rice*i1)+(wheat*i2)+(sugar*i3)+(dal*i4)+(salt*i5)
+if bill>3000:
+    tax=(15*bill)/100
+elif bill>2000:
+    tax=(10*bill)/100
+elif bill>1000:
+    tax=(7*bill)/100
+elif bill>500:
+    tax=(5*bill)/100
+else:
+    tax=100
+tt=tax+bill
+print("phn number:",cp)
+print("name:",name)
+print("address:",add)
+print("bill:",bill)
+print("tax:",tax)
+print("total bill:",tt)
