@@ -1,0 +1,18 @@
+a=int(input("enter your meter number"))
+b=input("enter your name")
+units=int(input("enter units"))
+if units<=50:
+    bill=units*4
+elif units<=100:
+    bill=(units*4)+50
+elif units<=200:
+    bill=(units*4)+100
+elif units<=300:
+    bill=(units*4)+200
+elif units<=400:
+    bill=(units*4)+300
+elif units>400:
+    bill=(units*4)+400
+print("meter number:",a)
+print("name:",b)
+print("bill:",bill)
