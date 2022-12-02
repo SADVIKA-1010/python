@@ -1,0 +1,9 @@
+def is_leap(year):
+    if year % 400 == 0:
+        return "Leap year"
+    elif year % 100 == 0:
+        return "Not Leap year"
+    elif year % 4 == 0:
+        return "Leap year"
+year = int(input("year=")) 
+print(is_leap(year))
